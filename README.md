@@ -10,6 +10,18 @@ This project performs a simple data analysis and visualization of a retail datas
 
 ---
 
+## What it does
+
+- Loads a dataset containing retail product sales data  
+- Generates a histogram for a selected numeric column  
+- Displays the frequency distribution of values  
+- Helps identify patterns such as:
+  - Data spread  
+  - Central tendency  
+  - Potential outliers  
+
+---
+
 ## Dataset
 
 - **File Name:** `RetailStoreProductSalesDataset.csv`  
@@ -25,36 +37,3 @@ The project requires the following Python libraries:
 
 ```bash
 pip install pandas matplotlib
-How to Run
-Download or clone the repository
-Place the dataset file in the project directory
-Run the script using the following command:
-python histogram.py
-Methodology
-
-The script performs the following steps:
-
-Imports the required libraries (pandas and matplotlib)
-Loads the dataset into a DataFrame
-Displays column names to verify available data fields
-Selects a numeric column for analysis (default: price)
-Generates a histogram with a specified number of bins
-Labels the axes and assigns a descriptive title
-Displays the histogram
-Output
-A histogram showing the frequency distribution of the selected variable
-Provides insight into the overall structure of the dataset
-Customization
-
-To analyze a different variable, modify the following line in the script:
-
-column_name = 'price'
-
-You may replace 'price' with another numeric column such as:
-
-discount
-footfall
-Notes
-The selected column must contain numeric data
-Ensure the dataset file path is correct
-The number of bins can be adjusted in the script
