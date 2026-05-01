@@ -37,3 +37,12 @@ The project requires the following Python libraries:
 
 ```bash
 pip install pandas matplotlib
+
+## How to Run
+
+1. Download or clone the repository  
+2. Place the dataset file in the project directory  
+3. Run the script using the following command:
+
+```bash
+python histogram.py
