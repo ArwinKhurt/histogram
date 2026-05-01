@@ -35,7 +35,7 @@ Ensure the dataset file is located in the same directory as the Python script be
 
 The project requires the following Python libraries:
 
-```bash
+bash
 pip install pandas matplotlib
 
 ## How to Run
@@ -44,5 +44,41 @@ pip install pandas matplotlib
 2. Place the dataset file in the project directory  
 3. Run the script using the following command:
 
-```bash
+bash
 python histogram.py
+
+## Methodology
+
+The script performs the following steps:
+
+- Imports the required libraries (`pandas` and `matplotlib`)  
+- Loads the dataset into a DataFrame  
+- Displays column names to verify available data fields  
+- Selects a numeric column for analysis (default: `price`)  
+- Generates a histogram with a specified number of bins  
+- Labels the axes and assigns a descriptive title  
+- Displays the histogram  
+
+---
+
+## Output
+
+- A histogram showing the frequency distribution of the selected variable  
+- Provides insight into:
+  - Data spread  
+  - Central tendency  
+  - Potential outliers  
+
+---
+
+## Customization
+
+To analyze a different variable, modify the following line in the script:
+
+python
+column_name = 'price'
+
+You may replace 'price' with another numeric column such as:
+discount
+footfall
+
