@@ -5,7 +5,7 @@ df = pd.read_csv("RetailStoreProductSalesDataset.csv")
 
 print(df.columns)
 
-column_name = 'price'   # you can change this to: 'discount', 'footfall', etc.
+column_name = 'price'   
 
 plt.hist(df[column_name], bins=15, edgecolor='black')
 
